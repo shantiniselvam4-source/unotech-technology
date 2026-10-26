@@ -10,7 +10,10 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Poppins for headings, Manrope for body text -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <style>
@@ -39,9 +42,13 @@
         body {
             background: var(--black);
             color: var(--white);
-            font-family: 'Inter', sans-serif;
+            font-family: 'Manrope', sans-serif;
             font-size: 15px;
             line-height: 1.7;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
         }
 
         a {
@@ -54,12 +61,16 @@
             max-width: 100%;
         }
 
+        button, input, textarea, select {
+            font: inherit;
+        }
+
         .container {
             width: min(var(--container), 90%);
             margin: 0 auto;
         }
 
-        /* HEADER - MATCHES ABOUT AND CONTACT PAGES */
+        /* HEADER */
 
         .site-header {
             position: sticky;
@@ -111,8 +122,9 @@
         .brand-name small {
             margin-top: 5px;
             color: #4b5563;
+            font-family: 'Manrope', sans-serif;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             letter-spacing: 5px;
         }
 
@@ -130,7 +142,7 @@
             cursor: pointer;
         }
 
-        /* FULL-WIDTH BLACK NAVIGATION BAR */
+        /* NAVIGATION */
 
         .main-nav {
             display: flex;
@@ -146,10 +158,10 @@
 
         .main-nav .nav-link,
         .main-nav .nav-cta {
-            font-family: 'Inter', sans-serif;
-            font-size: 15px;
+            font-family: 'Manrope', sans-serif;
+            font-size: 14px;
             font-weight: 800;
-            letter-spacing: 0.4px;
+            letter-spacing: 0.3px;
         }
 
         .nav-link {
@@ -204,9 +216,9 @@
         .eyebrow {
             margin-bottom: 15px;
             color: var(--light-grey);
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 3px;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2.5px;
         }
 
         .page-banner h1 {
@@ -231,6 +243,8 @@
             margin: 0 auto;
             color: var(--light-grey);
             font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
         }
 
         /* SERVICES */
@@ -243,6 +257,9 @@
             max-width: 720px;
             margin: 0 auto 38px;
             color: var(--light-grey);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
             text-align: center;
         }
 
@@ -310,15 +327,17 @@
         .service-content h2 {
             margin-bottom: 10px;
             font-family: 'Poppins', sans-serif;
-            font-size: 19px;
+            font-size: 18px;
             font-weight: 600;
-            line-height: 1.4;
+            line-height: 1.45;
         }
 
         .service-content p {
             margin-bottom: 22px;
             color: var(--light-grey);
-            font-size: 14px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 1.8;
         }
 
         .service-link {
@@ -328,7 +347,7 @@
             margin-top: auto;
             color: #1677ff;
             font-size: 13px;
-            font-weight: 700;
+            font-weight: 800;
         }
 
         .service-link span {
@@ -360,7 +379,9 @@
             max-width: 650px;
             margin: 0 auto 22px;
             color: var(--light-grey);
-            font-size: 15px;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.8;
         }
 
         .button {
@@ -373,8 +394,9 @@
             border-radius: 5px;
             background: linear-gradient(135deg, #1677ff, #5145cd);
             color: #ffffff;
+            font-family: 'Manrope', sans-serif;
             font-size: 14px;
-            font-weight: 700;
+            font-weight: 800;
             transition: background 0.2s, color 0.2s, transform 0.2s;
         }
 
@@ -384,7 +406,7 @@
             transform: translateY(-2px);
         }
 
-        /* SEND AN ENQUIRY - RED GRADIENT */
+        /* SEND AN ENQUIRY */
 
         .simple-cta .button {
             background: linear-gradient(135deg, #ef4444, #b91c1c);
@@ -437,6 +459,8 @@
             margin-top: 15px;
             color: var(--grey);
             font-size: 14px;
+            font-weight: 500;
+            line-height: 1.8;
         }
 
         .footer-heading {
@@ -453,6 +477,7 @@
             margin-bottom: 9px;
             color: var(--light-grey);
             font-size: 14px;
+            font-weight: 500;
             transition: color 0.2s;
         }
 
@@ -547,6 +572,7 @@
             border-top: 1px solid var(--border);
             color: var(--grey);
             font-size: 12px;
+            font-weight: 500;
         }
 
         .footer-bottom a {
@@ -573,7 +599,7 @@
             }
         }
 
-        /* MOBILE NAVIGATION - SAME AS ABOUT PAGE */
+        /* MOBILE */
 
         @media (max-width: 700px) {
             .nav-container {
@@ -624,7 +650,7 @@
                 width: 100%;
                 padding: 13px 5px;
                 text-align: center;
-                font-size: 15px;
+                font-size: 14px;
             }
 
             .nav-link.active::after {
@@ -645,8 +671,17 @@
                 letter-spacing: -1px;
             }
 
+            .page-banner p:last-child {
+                font-size: 16px;
+            }
+
             .services-section {
                 padding: 45px 0 55px;
+            }
+
+            .services-intro {
+                margin-bottom: 30px;
+                font-size: 15px;
             }
 
             .services-grid {
@@ -660,14 +695,25 @@
 
             .service-content {
                 min-height: auto;
+                padding: 22px;
+            }
+
+            .service-content h2 {
+                font-size: 18px;
             }
 
             .service-content p {
                 margin-bottom: 18px;
+                font-size: 15px;
+                line-height: 1.8;
             }
 
             .simple-cta {
                 padding: 45px 0;
+            }
+
+            .simple-cta p:not(.eyebrow) {
+                font-size: 15px;
             }
 
             .footer-grid {
@@ -683,6 +729,8 @@
                 gap: 10px;
             }
         }
+
+        /* REDUCED MOTION */
 
         @media (prefers-reduced-motion: reduce) {
             html {
@@ -1102,7 +1150,6 @@
                 menuToggle.textContent = isOpen ? "✕" : "☰";
             });
 
-            // CLOSE MENU AFTER SELECTING A LINK
             mainNav.querySelectorAll("a").forEach(function (link) {
                 link.addEventListener("click", function () {
                     mainNav.classList.remove("is-open");
