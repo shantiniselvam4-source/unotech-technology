@@ -1,0 +1,981 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Unotech Technology</title>
+<meta name="description" content="Learn about Unotech Technology, your partner for computer sales, laptop and desktop repairs, custom PC builds and IT support.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<style>
+:root {
+    --black: #ffffff;
+    --dark: #f8fafc;
+    --dark-grey: #f1f5f9;
+    --grey: #6b7280;
+    --light-grey: #4b5563;
+    --white: #111827;
+    --border: #e5e7eb;
+    --container: 1180px;
+    --blue-gradient: linear-gradient(135deg, #1677ff, #5145cd);
+    --green-gradient: linear-gradient(135deg, #16a34a, #059669);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+.container {
+    width: min(var(--container), 90%);
+    margin: 0 auto;
+}
+
+/* HEADER - IDENTICAL TO HOMEPAGE */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: #ffffff;
+}
+
+.nav-container {
+    display: flex;
+    width: 100%;
+    max-width: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin: 0 auto;
+    padding: 25px 0 0;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-align: center;
+}
+
+.brand-logo {
+    display: block;
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.brand-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #111827;
+    font-family: 'Poppins', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    line-height: 1.15;
+}
+
+.brand-name small {
+    margin-top: 5px;
+    color: #4b5563;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background: #111111;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.menu-toggle:focus-visible,
+.nav-link:focus-visible,
+.nav-cta:focus-visible,
+.button:focus-visible,
+.footer-contact-item:focus-visible,
+.footer-links a:focus-visible,
+.footer-bottom a:focus-visible {
+    outline: 2px solid #1677ff;
+    outline-offset: 4px;
+}
+
+/* NAVIGATION - SAME SIZE AS HOMEPAGE */
+
+.main-nav {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 38px;
+    margin-top: 5px;
+    padding: 17px 20px;
+    background: #111111;
+}
+
+.main-nav .nav-link,
+.main-nav .nav-cta {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+}
+
+.nav-link {
+    position: relative;
+    padding: 8px 0;
+    color: #ffffff;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #ffffff;
+}
+
+.nav-link.active::after {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    background: #ffffff;
+    content: "";
+}
+
+.nav-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 42px;
+    padding: 10px 20px;
+    border: 1px solid #2563eb;
+    border-radius: 5px;
+    background: #2563eb;
+    color: #ffffff;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.nav-cta:hover {
+    background: #1d4ed8;
+    border-color: #1d4ed8;
+    color: #ffffff;
+}
+
+/* PAGE INTRO */
+
+.page-intro {
+    padding: 85px 0 65px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+}
+
+.eyebrow {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.page-intro h1 {
+    margin-bottom: 18px;
+    font-size: clamp(42px, 6vw, 68px);
+    font-weight: 800;
+    letter-spacing: -2px;
+    line-height: 1.15;
+}
+
+.page-intro h1 span {
+    background: var(--blue-gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.page-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: var(--light-grey);
+    font-size: 16px;
+}
+
+/* ABOUT CONTENT */
+
+.about-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: start;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 14px;
+    color: #1677ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+}
+
+.about-intro h2 {
+    margin-bottom: 22px;
+    font-size: clamp(30px, 4vw, 43px);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.about-intro p {
+    margin-bottom: 18px;
+    color: var(--light-grey);
+    font-size: 15px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    margin-top: 12px;
+    padding: 12px 22px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.about-intro .button {
+    background: var(--blue-gradient);
+}
+
+.cta-content > .button {
+    background: var(--green-gradient);
+}
+
+/* MISSION, VISION AND VALUES */
+
+.about-values {
+    border-top: 1px solid var(--border);
+}
+
+.about-value {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 20px;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.value-number {
+    color: #1677ff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.about-value h3 {
+    margin-bottom: 8px;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.about-value p {
+    color: var(--light-grey);
+    font-size: 14px;
+}
+
+/* CALL TO ACTION */
+
+.cta-section {
+    padding: 65px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    background: #f8fafc;
+}
+
+.cta-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.cta-text h2 {
+    margin-bottom: 10px;
+    font-size: clamp(27px, 4vw, 38px);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.cta-text p {
+    max-width: 580px;
+    color: var(--light-grey);
+    font-size: 15px;
+}
+
+.cta-content .button {
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+/* FOOTER */
+
+.site-footer {
+    border-top: 1px solid var(--border);
+    background: #ffffff;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: start;
+    gap: 35px;
+    padding: 45px 0 40px;
+}
+
+.footer-brand {
+    justify-self: start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.footer-brand .brand-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.footer-brand .brand-name {
+    align-items: flex-start;
+    font-size: 23px;
+}
+
+.footer-brand .brand-name small {
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.footer-description {
+    max-width: 310px;
+    margin-top: 15px;
+    color: var(--grey);
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+.footer-heading {
+    margin-bottom: 14px;
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.footer-links a {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 9px;
+    color: var(--light-grey);
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #1677ff;
+    text-decoration: underline;
+}
+
+/* FOOTER CONTACT */
+
+.footer-contact .footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 100%;
+    margin-bottom: 14px;
+    color: var(--light-grey);
+    font-size: 13px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footer-contact .footer-contact-item:hover {
+    color: #1677ff;
+}
+
+.footer-contact-item .contact-icon {
+    display: inline-flex;
+    flex: 0 0 18px;
+    width: 18px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    font-size: 17px;
+    transition: transform 0.2s ease;
+}
+
+.footer-contact-item .contact-detail {
+    min-width: 0;
+}
+
+.footer-contact-item .contact-detail strong {
+    display: block;
+    color: var(--light-grey);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    transition: color 0.2s ease;
+}
+
+.footer-contact-item:hover .contact-detail strong {
+    color: #1677ff;
+}
+
+.footer-contact-item:hover .contact-icon {
+    transform: translateY(-2px);
+}
+
+.footer-contact-item .fa-whatsapp { color: #25D366; }
+.footer-contact-item .fa-envelope { color: #EA4335; }
+.footer-contact-item .fa-instagram { color: #E4405F; }
+.footer-contact-item .fa-tiktok {
+    color: #00a9b3;
+    text-shadow: 1px 1px 0 #FF0050;
+}
+.footer-contact-item .fa-facebook-f { color: #1877F2; }
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+    color: var(--grey);
+    font-size: 12px;
+}
+
+.footer-bottom a {
+    color: var(--light-grey);
+}
+
+.footer-bottom a:hover {
+    color: #1677ff;
+    text-decoration: underline;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .about-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+    }
+
+    .footer-contact {
+        grid-column: 1 / -1;
+    }
+}
+
+/* MOBILE - SAME NAVIGATION BEHAVIOUR AS HOMEPAGE */
+
+@media (max-width: 700px) {
+    .nav-container {
+        position: relative;
+        width: 100%;
+        gap: 15px;
+        padding: 20px 0 0;
+    }
+
+    .brand-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .brand-name {
+        font-size: 23px;
+    }
+
+    .brand-name small {
+        font-size: 11px;
+        letter-spacing: 4px;
+    }
+
+    .menu-toggle {
+        position: absolute;
+        top: 24px;
+        right: 5%;
+        display: flex;
+    }
+
+    .main-nav {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        margin-top: 0;
+        padding: 12px 5%;
+        border-top: 1px solid #333333;
+        background: #111111;
+    }
+
+    .main-nav.is-open {
+        display: flex;
+    }
+
+    .nav-link {
+        width: 100%;
+        padding: 13px 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .nav-link.active::after {
+        right: 35%;
+        left: 35%;
+    }
+
+    .nav-cta {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .page-intro {
+        padding: 60px 0 45px;
+    }
+
+    .page-intro h1 {
+        letter-spacing: -1px;
+    }
+
+    .page-intro p {
+        font-size: 15px;
+    }
+
+    .about-section {
+        padding: 55px 0;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-value {
+        grid-template-columns: 35px 1fr;
+        gap: 12px;
+    }
+
+    .cta-section {
+        padding: 45px 0;
+    }
+
+    .cta-content {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 30px;
+        padding: 35px 0 30px;
+    }
+
+    .footer-brand .brand-logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-brand .brand-name {
+        font-size: 22px;
+    }
+
+    .footer-contact {
+        grid-column: auto;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}
+</style>
+</head>
+
+<body id="top">
+
+<header class="site-header">
+    <div class="nav-container">
+
+        <a href="index.html" class="brand"
+           aria-label="Unotech Technology home">
+
+            <img src="./images/unotech-logo.png"
+                 alt="Unotech Technology logo"
+                 class="brand-logo">
+
+            <span class="brand-name">
+                UNOTECH
+                <small>TECHNOLOGY</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav">☰</button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link active" href="about.html"
+               aria-current="page">About Us</a>
+            <a class="nav-link" href="services.html">Our Services</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-cta" href="contact.html">Enquire Now</a>
+        </nav>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-intro">
+        <div class="container">
+            <span class="eyebrow">GET TO KNOW US</span>
+
+            <h1>About <span>Unotech.</span></h1>
+
+            <p>
+                Your trusted partner for computer solutions,
+                professional repairs and reliable IT services.
+            </p>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="container about-layout">
+
+            <div class="about-intro">
+                <span class="section-label">WHO WE ARE</span>
+
+                <h2>Technology solutions you can rely on.</h2>
+
+                <p>
+                    Unotech Technology is a computer and IT solutions
+                    company providing services for individuals,
+                    home users and businesses.
+                </p>
+
+                <p>
+                    We offer computer sales, laptop and desktop repairs,
+                    motherboard troubleshooting, custom PC builds,
+                    computer accessories and software installation.
+                </p>
+
+                <p>
+                    Our goal is to help customers find practical
+                    technology solutions, whether they need a new
+                    computer, a repair, an upgrade or technical support.
+                </p>
+
+                <a href="contact.html" class="button">
+                    Talk to Our Team →
+                </a>
+            </div>
+
+            <div class="about-values">
+
+                <article class="about-value">
+                    <span class="value-number">01</span>
+                    <div>
+                        <h3>Our Mission</h3>
+                        <p>
+                            To provide reliable, practical and
+                            affordable computer solutions that meet
+                            our customers' needs.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="about-value">
+                    <span class="value-number">02</span>
+                    <div>
+                        <h3>Our Vision</h3>
+                        <p>
+                            To be a trusted technology partner for
+                            individuals and businesses through
+                            dependable products and services.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="about-value">
+                    <span class="value-number">03</span>
+                    <div>
+                        <h3>Our Values</h3>
+                        <p>
+                            We value professionalism, honest
+                            communication, reliable service and
+                            customer satisfaction.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container cta-content">
+
+            <div class="cta-text">
+                <span class="eyebrow">NEED A HAND?</span>
+
+                <h2>Let's solve your tech problems.</h2>
+
+                <p>
+                    Contact Unotech Technology for computer repairs,
+                    upgrades, product enquiries and IT support.
+                </p>
+            </div>
+
+            <a href="contact.html" class="button">
+                Contact Us →
+            </a>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+
+    <div class="container footer-main">
+
+        <div class="footer-brand-wrapper">
+            <a href="index.html"
+               class="brand footer-brand"
+               aria-label="Unotech Technology home">
+
+                <img src="./images/unotech-logo.png"
+                     alt="Unotech Technology logo"
+                     class="brand-logo">
+
+                <span class="brand-name">
+                    UNOTECH
+                    <small>TECHNOLOGY</small>
+                </span>
+            </a>
+
+            <p class="footer-description">
+                Computer sales, repairs, custom PC builds,
+                accessories and IT solutions.
+            </p>
+        </div>
+
+        <div class="footer-links">
+            <h2 class="footer-heading">Quick Links</h2>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h2 class="footer-heading">Contact Us</h2>
+
+            <a class="footer-contact-item"
+               href="https://wa.me/60169898137"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="WhatsApp 016-989 8137">
+                <span class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </span>
+                <span class="contact-detail">
+                    <strong>016-989 8137</strong>
+                </span>
+            </a>
+
+            <a class="footer-contact-item"
+               href="mailto:unotechtechnology@outlook.com"
+               aria-label="Email Unotech Technology">
+                <span class="contact-icon" aria-hidden="true">
+                    <i class="fa-regular fa-envelope"></i>
+                </span>
+                <span class="contact-detail">
+                    <strong>unotechtechnology@outlook.com</strong>
+                </span>
+            </a>
+
+            <a class="footer-contact-item"
+               href="https://www.instagram.com/unotech_technology/"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Instagram @unotech_technology">
+                <span class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="contact-detail">
+                    <strong>@unotech_technology</strong>
+                </span>
+            </a>
+
+            <a class="footer-contact-item"
+               href="https://www.tiktok.com/@unotech.technology"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="TikTok @unotech.technology">
+                <span class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-tiktok"></i>
+                </span>
+                <span class="contact-detail">
+                    <strong>@unotech.technology</strong>
+                </span>
+            </a>
+
+            <a class="footer-contact-item"
+               href="https://www.facebook.com/people/Unotech-Technology/61566837784308/"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="Unotech Technology Facebook">
+                <span class="contact-icon" aria-hidden="true">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </span>
+                <span class="contact-detail">
+                    <strong>Unotech Technology</strong>
+                </span>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="container footer-bottom">
+        <p>
+            &copy; <span id="currentYear"></span>
+            Unotech Technology. All rights reserved.
+        </p>
+        <a href="#top">Back to Top ↑</a>
+    </div>
+
+</footer>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const mainNav = document.getElementById("mainNav");
+
+if (menuToggle && mainNav) {
+    menuToggle.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("is-open");
+
+        menuToggle.setAttribute("aria-expanded", String(isOpen));
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+    });
+
+    mainNav.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            mainNav.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "Open navigation menu");
+            menuToggle.textContent = "☰";
+        });
+    });
+}
+
+document.getElementById("currentYear").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>

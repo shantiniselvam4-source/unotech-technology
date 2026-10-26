@@ -1,0 +1,1122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Our Services | Unotech Technology</title>
+    <meta name="description" content="Computer sales, laptop and desktop repairs, motherboard repair, custom PC builds, accessories and IT support by Unotech Technology.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        :root {
+            --black: #ffffff;
+            --dark: #f8fafc;
+            --card: #ffffff;
+            --grey: #6b7280;
+            --light-grey: #4b5563;
+            --white: #111827;
+            --border: #e5e7eb;
+            --container: 1180px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 20px;
+        }
+
+        body {
+            background: var(--black);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .container {
+            width: min(var(--container), 90%);
+            margin: 0 auto;
+        }
+
+        /* HEADER - MATCHES ABOUT AND CONTACT PAGES */
+
+        .site-header {
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background: #ffffff;
+        }
+
+        .nav-container {
+            display: flex;
+            width: 100%;
+            max-width: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+            margin: 0 auto;
+            padding: 25px 0 0;
+        }
+
+        .brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            text-align: center;
+        }
+
+        .brand-logo {
+            display: block;
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+        }
+
+        .brand-name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #111827;
+            font-family: 'Poppins', sans-serif;
+            font-size: 27px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            line-height: 1.15;
+        }
+
+        .brand-name small {
+            margin-top: 5px;
+            color: #4b5563;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 5px;
+        }
+
+        .menu-toggle {
+            display: none;
+            width: 44px;
+            height: 44px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #333333;
+            border-radius: 8px;
+            background: #111111;
+            color: #ffffff;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        /* FULL-WIDTH BLACK NAVIGATION BAR */
+
+        .main-nav {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 38px;
+            margin-top: 5px;
+            padding: 17px 20px;
+            background: #111111;
+        }
+
+        .main-nav .nav-link,
+        .main-nav .nav-cta {
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            font-weight: 800;
+            letter-spacing: 0.4px;
+        }
+
+        .nav-link {
+            position: relative;
+            padding: 8px 0;
+            color: #ffffff;
+            transition: color 0.2s ease;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: #ffffff;
+        }
+
+        .nav-link.active::after {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: #ffffff;
+            content: "";
+        }
+
+        .nav-cta {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 42px;
+            padding: 10px 20px;
+            border: 1px solid #2563eb;
+            border-radius: 5px;
+            background: #2563eb;
+            color: #ffffff;
+            transition: background 0.2s ease, border-color 0.2s ease;
+        }
+
+        .nav-cta:hover {
+            background: #1d4ed8;
+            border-color: #1d4ed8;
+            color: #ffffff;
+        }
+
+        /* PAGE BANNER */
+
+        .page-banner {
+            padding: 75px 0 60px;
+            border-bottom: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .eyebrow {
+            margin-bottom: 15px;
+            color: var(--light-grey);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+        }
+
+        .page-banner h1 {
+            margin-bottom: 15px;
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(40px, 6vw, 64px);
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 1.2;
+        }
+
+        .page-banner h1 span {
+            background: linear-gradient(135deg, #1677ff, #5145cd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+
+        .page-banner p:last-child {
+            max-width: 720px;
+            margin: 0 auto;
+            color: var(--light-grey);
+            font-size: 16px;
+        }
+
+        /* SERVICES */
+
+        .services-section {
+            padding: 70px 0 85px;
+        }
+
+        .services-intro {
+            max-width: 720px;
+            margin: 0 auto 38px;
+            color: var(--light-grey);
+            text-align: center;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 25px;
+        }
+
+        .service-card {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--card);
+            transition: transform 0.25s, border-color 0.25s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #777;
+        }
+
+        .service-image {
+            position: relative;
+            overflow: hidden;
+            background: var(--dark);
+        }
+
+        .service-image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            transition: transform 0.35s;
+        }
+
+        .service-card:hover .service-image img {
+            transform: scale(1.04);
+        }
+
+        .service-number {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            display: flex;
+            width: 38px;
+            height: 38px;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            background: rgba(0, 0, 0, 0.8);
+            color: #ffffff;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .service-content {
+            display: flex;
+            min-height: 230px;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 23px;
+        }
+
+        .service-content h2 {
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 19px;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+
+        .service-content p {
+            margin-bottom: 22px;
+            color: var(--light-grey);
+            font-size: 14px;
+        }
+
+        .service-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            margin-top: auto;
+            color: #1677ff;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .service-link span {
+            transition: transform 0.2s;
+        }
+
+        .service-link:hover span {
+            transform: translateX(5px);
+        }
+
+        /* CTA */
+
+        .simple-cta {
+            padding: 65px 0;
+            border-top: 1px solid var(--border);
+            background: var(--dark);
+            text-align: center;
+        }
+
+        .simple-cta h2 {
+            margin-bottom: 12px;
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(27px, 4vw, 38px);
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .simple-cta p:not(.eyebrow) {
+            max-width: 650px;
+            margin: 0 auto 22px;
+            color: var(--light-grey);
+            font-size: 15px;
+        }
+
+        .button {
+            display: inline-flex;
+            min-height: 47px;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 22px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            background: linear-gradient(135deg, #1677ff, #5145cd);
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 700;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+        }
+
+        .button:hover {
+            background: linear-gradient(135deg, #1265df, #4338b8);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* SEND AN ENQUIRY - RED GRADIENT */
+
+        .simple-cta .button {
+            background: linear-gradient(135deg, #ef4444, #b91c1c);
+            color: #ffffff;
+        }
+
+        .simple-cta .button:hover {
+            background: linear-gradient(135deg, #dc2626, #991b1b);
+            color: #ffffff;
+            box-shadow: 0 8px 20px rgba(185, 28, 28, 0.25);
+        }
+
+        /* FOOTER */
+
+        .site-footer {
+            background: #f8fafc;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            align-items: start;
+            gap: 35px;
+            padding-top: 45px;
+            padding-bottom: 40px;
+        }
+
+        .footer-logo {
+            align-items: flex-start;
+            text-align: left;
+        }
+
+        .footer-logo .brand-logo {
+            width: 90px;
+            height: 90px;
+        }
+
+        .footer-logo .brand-name {
+            align-items: flex-start;
+            font-size: 23px;
+        }
+
+        .footer-logo .brand-name small {
+            font-size: 11px;
+            letter-spacing: 4px;
+        }
+
+        .footer-brand p {
+            max-width: 300px;
+            margin-top: 15px;
+            color: var(--grey);
+            font-size: 14px;
+        }
+
+        .footer-heading {
+            margin-bottom: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .footer-links a {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            margin-bottom: 9px;
+            color: var(--light-grey);
+            font-size: 14px;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            text-decoration: underline;
+        }
+
+        /* FOOTER CONTACT DETAILS */
+
+        .footer-contact .footer-contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            width: 100%;
+            margin-bottom: 14px;
+            color: var(--light-grey);
+            font-size: 13px;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+            transition: color 0.2s;
+        }
+
+        .footer-contact .footer-contact-item:hover {
+            color: var(--white);
+        }
+
+        .footer-contact-item .contact-icon {
+            display: inline-flex;
+            flex: 0 0 18px;
+            width: 18px;
+            align-items: center;
+            justify-content: center;
+            margin-top: 3px;
+            font-size: 17px;
+            transition: transform 0.2s ease;
+        }
+
+        .footer-contact-item .contact-detail {
+            min-width: 0;
+        }
+
+        .footer-contact-item .contact-detail strong {
+            display: block;
+            color: var(--light-grey);
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 1.6;
+            overflow-wrap: anywhere;
+        }
+
+        .footer-contact-item:hover .contact-detail strong {
+            color: var(--white);
+        }
+
+        .footer-contact-item:hover .contact-icon {
+            transform: translateY(-2px);
+        }
+
+        /* BRAND COLORS */
+
+        .footer-contact-item .fa-whatsapp {
+            color: #25D366;
+        }
+
+        .footer-contact-item .fa-envelope {
+            color: #EA4335;
+        }
+
+        .footer-contact-item .fa-instagram {
+            color: #E4405F;
+        }
+
+        .footer-contact-item .fa-tiktok {
+            color: #00F2EA;
+            text-shadow: 1px 1px 0 #FF0050;
+        }
+
+        .footer-contact-item .fa-facebook-f {
+            color: #1877F2;
+        }
+
+        /* COPYRIGHT */
+
+        .footer-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--grey);
+            font-size: 12px;
+        }
+
+        .footer-bottom a {
+            color: var(--light-grey);
+        }
+
+        .footer-bottom a:hover {
+            color: var(--white);
+        }
+
+        /* TABLET */
+
+        @media (max-width: 950px) {
+            .services-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .service-content {
+                min-height: 240px;
+            }
+
+            .footer-grid {
+                gap: 25px;
+            }
+        }
+
+        /* MOBILE NAVIGATION - SAME AS ABOUT PAGE */
+
+        @media (max-width: 700px) {
+            .nav-container {
+                position: relative;
+                width: 100%;
+                gap: 15px;
+                padding: 20px 0 0;
+            }
+
+            .brand-logo {
+                width: 100px;
+                height: 100px;
+            }
+
+            .brand-name {
+                font-size: 23px;
+            }
+
+            .brand-name small {
+                font-size: 11px;
+                letter-spacing: 4px;
+            }
+
+            .menu-toggle {
+                position: absolute;
+                top: 24px;
+                right: 5%;
+                display: flex;
+            }
+
+            .main-nav {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: stretch;
+                gap: 0;
+                margin-top: 0;
+                padding: 12px 5%;
+                border-top: 1px solid #333333;
+                background: #111111;
+            }
+
+            .main-nav.is-open {
+                display: flex;
+            }
+
+            .nav-link {
+                width: 100%;
+                padding: 13px 5px;
+                text-align: center;
+                font-size: 15px;
+            }
+
+            .nav-link.active::after {
+                right: 35%;
+                left: 35%;
+            }
+
+            .nav-cta {
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            .page-banner {
+                padding: 55px 0 45px;
+            }
+
+            .page-banner h1 {
+                letter-spacing: -1px;
+            }
+
+            .services-section {
+                padding: 45px 0 55px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .service-image img {
+                height: 230px;
+            }
+
+            .service-content {
+                min-height: auto;
+            }
+
+            .service-content p {
+                margin-bottom: 18px;
+            }
+
+            .simple-cta {
+                padding: 45px 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding-top: 35px;
+                padding-bottom: 30px;
+            }
+
+            .footer-bottom {
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition-duration: 0.01ms !important;
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="nav-container">
+
+            <a href="index.html" class="brand" aria-label="Unotech Technology home">
+                <img
+                    src="./images/unotech-logo.png"
+                    alt="Unotech Technology logo"
+                    class="brand-logo">
+
+                <span class="brand-name">
+                    UNOTECH
+                    <small>TECHNOLOGY</small>
+                </span>
+            </a>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="mainNav">☰</button>
+
+            <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+                <a class="nav-link" href="index.html">Home</a>
+                <a class="nav-link" href="about.html">About Us</a>
+                <a class="nav-link active" href="services.html" aria-current="page">Our Services</a>
+                <a class="nav-link" href="contact.html">Contact</a>
+                <a class="nav-cta" href="contact.html#enquiry">Enquire Now</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- PAGE BANNER -->
+        <section class="page-banner">
+            <div class="container">
+                <p class="eyebrow">WHAT WE DO</p>
+                <h1>Our <span>Services</span></h1>
+                <p>
+                    Computer sales, professional repairs and IT support
+                    to keep your technology running smoothly.
+                </p>
+            </div>
+        </section>
+
+        <!-- SERVICES -->
+        <section class="services-section" id="services">
+            <div class="container">
+
+                <p class="services-intro">
+                    From everyday computer problems to custom PC builds,
+                    we provide practical solutions for home, study, work
+                    and business needs.
+                </p>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=80"
+                                alt="Laptop computer for work and everyday use"
+                                loading="lazy">
+                            <span class="service-number">01</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Computer &amp; Laptop Sales</h2>
+                            <p>
+                                Explore computers and laptops for work,
+                                study, business and gaming, with options
+                                for different needs and budgets.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=900&q=80"
+                                alt="Desktop computer hardware"
+                                loading="lazy">
+                            <span class="service-number">02</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Laptop &amp; Desktop Repair</h2>
+                            <p>
+                                Troubleshooting and repair services for
+                                common laptop and desktop issues, including
+                                startup and hardware problems.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1587202372634-32705e3bf49c?auto=format&fit=crop&w=900&q=80"
+                                alt="Custom desktop PC components"
+                                loading="lazy">
+                            <span class="service-number">03</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Custom PC Builds</h2>
+                            <p>
+                                Custom-built desktop computers tailored
+                                to your intended use, preferred
+                                specifications and budget.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=900&q=80"
+                                alt="Computer memory and hardware components"
+                                loading="lazy">
+                            <span class="service-number">04</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Hardware Upgrades</h2>
+                            <p>
+                                Upgrade compatible RAM, SSDs and other
+                                hardware to improve performance and
+                                support your computing needs.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80"
+                                alt="Electronic circuit board and components"
+                                loading="lazy">
+                            <span class="service-number">05</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Motherboard Repair</h2>
+                            <p>
+                                Motherboard diagnosis and repair for
+                                selected laptop and desktop faults,
+                                subject to inspection.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?auto=format&fit=crop&w=900&q=80"
+                                alt="Computer keyboard and accessories"
+                                loading="lazy">
+                            <span class="service-number">06</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Computer Accessories</h2>
+                            <p>
+                                Find keyboards, mice, monitors and other
+                                accessories for everyday use, work
+                                and gaming setups.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1587831990711-23ca6441447b?auto=format&fit=crop&w=900&q=80"
+                                alt="Computer workstation for software setup"
+                                loading="lazy">
+                            <span class="service-number">07</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Software &amp; Installation</h2>
+                            <p>
+                                Windows installation, software setup,
+                                updates and basic system configuration
+                                to get your computer ready to use.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-image">
+                            <img
+                                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+                                alt="Team collaborating with technology"
+                                loading="lazy">
+                            <span class="service-number">08</span>
+                        </div>
+                        <div class="service-content">
+                            <h2>Business IT Support</h2>
+                            <p>
+                                Practical computer support and technology
+                                assistance for home users and businesses.
+                            </p>
+                            <a class="service-link" href="contact.html">
+                                Enquire Now <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CALL TO ACTION -->
+        <section class="simple-cta">
+            <div class="container">
+                <p class="eyebrow">NEED HELP?</p>
+                <h2>Not Sure What You Need?</h2>
+                <p>
+                    Tell us about your computer issue or what you are
+                    looking for. Our team can help you explore the
+                    next step.
+                </p>
+                <a class="button" href="contact.html#enquiry">
+                    Send an Enquiry <span aria-hidden="true">&nbsp;→</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <!-- BRAND -->
+            <div class="footer-brand">
+                <a href="index.html" class="brand footer-logo"
+                   aria-label="Unotech Technology home">
+
+                    <img
+                        src="./images/unotech-logo.png"
+                        alt="Unotech Technology logo"
+                        class="brand-logo">
+
+                    <span class="brand-name">
+                        UNOTECH
+                        <small>TECHNOLOGY</small>
+                    </span>
+                </a>
+
+                <p>
+                    Computer sales, repairs, custom PC builds,
+                    accessories and IT support.
+                </p>
+            </div>
+
+            <!-- QUICK LINKS -->
+            <div class="footer-links">
+                <h2 class="footer-heading">Quick Links</h2>
+
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="services.html">Our Services</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <!-- CONTACT US -->
+            <div class="footer-contact">
+                <h2 class="footer-heading">Contact Us</h2>
+
+                <a
+                    class="footer-contact-item"
+                    href="https://wa.me/60169898137"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="WhatsApp 016-989 8137">
+
+                    <span class="contact-icon" aria-hidden="true">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </span>
+
+                    <span class="contact-detail">
+                        <strong>016-989 8137</strong>
+                    </span>
+                </a>
+
+                <a
+                    class="footer-contact-item"
+                    href="mailto:unotechtechnology@outlook.com"
+                    aria-label="Email Unotech Technology">
+
+                    <span class="contact-icon" aria-hidden="true">
+                        <i class="fa-regular fa-envelope"></i>
+                    </span>
+
+                    <span class="contact-detail">
+                        <strong>unotechtechnology@outlook.com</strong>
+                    </span>
+                </a>
+
+                <a
+                    class="footer-contact-item"
+                    href="https://www.instagram.com/unotech_technology/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Instagram @unotech_technology">
+
+                    <span class="contact-icon" aria-hidden="true">
+                        <i class="fa-brands fa-instagram"></i>
+                    </span>
+
+                    <span class="contact-detail">
+                        <strong>@unotech_technology</strong>
+                    </span>
+                </a>
+
+                <a
+                    class="footer-contact-item"
+                    href="https://www.tiktok.com/@unotech.technology"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="TikTok @unotech.technology">
+
+                    <span class="contact-icon" aria-hidden="true">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </span>
+
+                    <span class="contact-detail">
+                        <strong>@unotech.technology</strong>
+                    </span>
+                </a>
+
+                <a
+                    class="footer-contact-item"
+                    href="https://www.facebook.com/people/Unotech-Technology/61566837784308/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Unotech Technology Facebook">
+
+                    <span class="contact-icon" aria-hidden="true">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </span>
+
+                    <span class="contact-detail">
+                        <strong>Unotech Technology</strong>
+                    </span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="container footer-bottom">
+            <p>
+                &copy; <span id="currentYear"></span>
+                Unotech Technology. All rights reserved.
+            </p>
+
+            <a href="#top">Back to Top ↑</a>
+        </div>
+    </footer>
+
+    <script>
+        // MOBILE NAVIGATION
+        const menuToggle = document.getElementById("menuToggle");
+        const mainNav = document.getElementById("mainNav");
+
+        if (menuToggle && mainNav) {
+            menuToggle.addEventListener("click", function () {
+                const isOpen = mainNav.classList.toggle("is-open");
+
+                menuToggle.setAttribute("aria-expanded", String(isOpen));
+                menuToggle.setAttribute(
+                    "aria-label",
+                    isOpen ? "Close navigation menu" : "Open navigation menu"
+                );
+
+                menuToggle.textContent = isOpen ? "✕" : "☰";
+            });
+
+            // CLOSE MENU AFTER SELECTING A LINK
+            mainNav.querySelectorAll("a").forEach(function (link) {
+                link.addEventListener("click", function () {
+                    mainNav.classList.remove("is-open");
+                    menuToggle.setAttribute("aria-expanded", "false");
+                    menuToggle.setAttribute("aria-label", "Open navigation menu");
+                    menuToggle.textContent = "☰";
+                });
+            });
+        }
+
+        // AUTOMATIC COPYRIGHT YEAR
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
